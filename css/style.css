@@ -1,0 +1,368 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 15px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background-color:#e5e1e1c1;;
+}
+#main {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+#main h1 {
+  font-size: 6.4rem;
+}
+/*-----------navbar*-------------*/
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2rem;
+  color: #8b8787;
+  font-size: 1.3rem;
+}
+#navbar input {
+  height: 25px;
+  border: 1px solid black;
+  width: 200px;
+  font-size: 13px;
+  margin-left: auto;
+}
+#navbar button {
+  background: rgb(95, 94, 94);
+  color: white;
+  border-radius: 3px 3px 3px 3px;
+  width: 77px;
+  cursor: pointer;
+  border: 1px solid black;
+  margin-left: 7px;
+}
+#navbar h6:hover{
+  color: rgb(0, 26, 255);
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 0.5s linear all;
+}
+#navbar button:hover {
+  background-color: #1b1b1b;
+  color: #fff;
+  transition: 0.5s linear all;
+}
+/*-----------navbar-main*-------------*/
+.navbar-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-top: double;
+  border-bottom: double;
+}
+
+.nav-links {
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 15px;
+}
+
+.nav-links li:first-child {
+  margin-left: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #626161;
+  padding: 5px 10px;
+}
+
+.nav-links a:hover {
+  background-color: #555;
+  text-decoration: underline;
+  color: #fff;
+  transition: 0.5s linear all;
+}
+
+@media (max-width: 768px) {
+  .navbar-main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/*-----container 1-----*/
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff !important;
+  margin-top: 19px;
+}
+
+.flex-item {
+  flex: 1 1 300px;
+  margin: 10px;
+  height: 200px;
+  background: #fff;
+  transition: 0.9s;
+}
+.flex-item:hover {
+  transform: scale(0.9);
+  color: #000;
+  cursor: pointer;
+  transition: 0.5s linear all;
+  box-shadow: 0px 15px 10px -15px #111;
+}
+.model {
+  line-height: 43px;
+  display: flex;
+}
+.model  h6 {
+  margin-inline: 30px;
+  font-size: 19px;
+  font-family: sans-serif;
+}
+.card p {
+  display: flex;
+  padding-top: 1.3rem;
+  color: #646262f0;
+}
+/*----container_2-----*/
+
+.container {
+  display: flex;
+  height: auto;
+  margin: 30px auto;
+}
+.box {
+  width: 32%;
+  height: auto;
+  margin: 3%;
+  transition: 0.9s;
+}
+.container img:hover {
+  transform: scale(0.9);
+  color: #000;
+  cursor: pointer;
+  transition: 0.5s linear all;
+  box-shadow: 0px 15px 10px -15px #111;
+}
+.container img {
+  width: 100%;
+  margin-bottom: 25px;
+  box-shadow: 0px 15px 10px -15px #111;
+}
+.container h3 {
+  color: rgb(104, 92, 92);
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+.container p {
+  font-size: 15px;
+  color: #646262f0;
+  padding: 0 5px;
+}
+
+/*----container_3-----*/
+.footerbox {
+  display: flex;
+  height: auto;
+  margin: 30px auto;
+  border-bottom: double;
+  flex-wrap: wrap;
+  border-top: double;
+}
+#banner {
+  width: 400px;
+  height: auto;
+  margin: 3%;
+  transition: 0.9s;
+  margin-top: 16px;
+}
+.footerbox h4 {
+  border-bottom: dotted;
+  padding-bottom: 6px;
+  color: #5b5b5b;
+  font-size: 18px;
+}
+
+#banner img {
+  width: 80px;
+  margin-bottom: -1px;
+  box-shadow: 0px 15px 10px -15px #111;
+  margin-left: 12px;
+  margin-top: 25px;
+  border: 4px solid white;
+}
+
+#banner1 {
+  width: 300px;
+  height: auto;
+  margin: 3%;
+  transition: 0.9s;
+  margin-top: 16px;
+}
+#banner1 p {
+  margin-top: 1.2rem;
+  color: darkgray;
+}
+#banner1 p:hover{
+  margin-top: 1.2rem;
+  color: rgb(0, 26, 255);
+  cursor: pointer;
+  text-decoration: underline;
+}
+#banner2 {
+  width: 300px;
+  height: auto;
+  margin: 3%;
+  transition: 0.9s;
+  margin-top: 16px;
+}
+#banner2 p {
+  margin-top: 1.2rem;
+  color: darkgray;
+}
+#banner2 p:hover{
+  margin-top: 1.2rem;
+  color: rgb(0, 26, 255);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/*----footer-----*/
+
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #737272b5;
+  font-size: 16px;
+}
+
+/*-------- navbar-main-------*/
+@media (max-width: 768px) {
+  .navbar-main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/*----container_2-----*/
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    width: 85%;
+    display: block;
+  }
+  .box {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+}
+
+@media (max-width: 768px) {
+  #header {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
+  #main h1 {
+    font-size: 20px;
+  }
+  #main h4 {
+    font-size: 10px;
+  }
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2rem;
+    color: #8b8787;
+    font-size: 1.3rem;
+  }
+  #navbar input {
+    height: 25px;
+    width: 120px;
+    margin-left: auto;
+  }
+  #navbar h6 {
+    font-size: 8px;
+    margin-right: 7px;
+  }
+
+  #banner {
+    width: 722px;
+    height: auto;
+    margin: 3%;
+    transition: 0.9s;
+    margin-top: 34px;
+  }
+  #banner1 {
+    width: 337px !important;
+    height: auto;
+    margin: 3%;
+    transition: 0.9s;
+    margin-top: 16px;
+}
+#banner2 {
+  width: 337px !important;
+  height: auto;
+  margin: 3%;
+  transition: 0.9s;
+  margin-top: 16px;
+}
+}
+@media(max-width:1024px){
+  #banner1 {
+    width: 219px;
+    height: auto;
+    margin: 3%;
+    transition: 0.9s;
+    margin-top: 16px;
+}
+#banner2 {
+  width: 219px;
+  height: auto;
+  margin: 3%;
+  transition: 0.9s;
+  margin-top: 16px;
+}
+}
